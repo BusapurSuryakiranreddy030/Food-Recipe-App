@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipe App</title>
+    <!-- FAVICON-->
+     <link rel="icon" type="image/png" href="food-favicon.jpg">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <header class="header-nav">
+            <h2>Food Recipe.</h2>
+            <div class="input-search">
+            <input type="search" id="search-term" placeholder="Search a recipe...">
+            <button id="search"><i class="fas fa-search"></i></button>
+            </div>
+         
+        </header>
+        <div class="fav-container">
+            <h3>Favorite Meals</h3>
+            <ul class="fav-meals" id="fav-meals"></ul>
+        </div>
+        <div class="meals" id="meals"></div>
+          <footer class="footer">
+<span>Made with 💖 by Surya</span>
+        </footer>
+    </div>
+    <div class="popup-container hidden" id="meal-popup">
+        <div class="popup">
+            <button id="close-popup" class="close-popup">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="meal-info" id="meal-info">
+               
+            </div>
+        </div>
+      
+    </div>
+    
+    <!-- JS -->
+    <script src="script.js" defer></script>
+</body>
+</html>
